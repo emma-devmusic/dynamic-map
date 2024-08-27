@@ -12,6 +12,8 @@ export const Countries = () => {
     const [values, setValues] = useState<string>('')
     const [country, setCountry] = useState<string>('')
 
+    
+
     const { data, loading, error } = useQuery<CountriesData>(COUNTRY_FILTER, {
         variables: { name: country }
     });
